@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width : 670px){
+    .container{
+        width: 70%;
+    }
+    input[type='submit']{
+        width: 20%;
+    }
+}
+@media only screen and (max-width : 670px){
+    .container{
+        width: 100%;
+    }
+    input[type='submit']{
+        width: 30%;
+    }
+}
+@media only screen and (max-width : 400px){
+    input[type='submit']{
+        width: 60%;
+    }
+}
+.container{
+    margin: 30px auto;
+    padding: 10px 10px;
+    text-align: center;
+
+}
+#form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    padding:10px 0;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;    
+    border-radius: 15px;
+    background-color: #eee;
+}
+.lab{
+    font-size: 30px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    width: 100%;
+
+}
+input{
+    margin: 0 20px;
+    font-size: 20px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    width: 60%;
+    border-radius: 8px;
+    vertical-align: middle;
+   
+    border: none;
+    border-bottom: 2px double  gainsboro;
+}
+input[type='submit']{
+    margin: 0 auto;
+    background-color: crimson;
+    color: white;
+    padding: 7px 10px;
+    transition: font-size 0.3s , background-color 0.3s;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgb(161, 71, 71);
+    cursor: pointer;
+}
+
+/*-------------------------------------*/
+.Tasks{
+   margin: 0 auto;
+   padding: 5px 10px;
+   text-align: center;
+}
+@media screen and (min-width : 670px) {
+    .Tasks{
+        width: 70%;
+    }
+}
+@media screen and (max-width : 670px) {
+    .Tasks{
+        width: 100%;
+    }
+}
+table{
+    width: 100%;
+    padding: 10px 15px;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 2px 2px rgba(236, 179, 9, 0.953);
+    border-radius: 8px;
+}
+thead td{
+    font-size: 25px ;
+    font-weight: bold;
+    background-color: #0a0a23;
+    color: white;
+    padding: 5px 0;
+}
+tbody tr{
+    font-size: 20px ;
+    font-weight: bold;
+    border-bottom: 3px solid gainsboro;
+    
+}
+tbody tr:nth-of-type(even){
+    background-color: #e4e4ed;  
+}
+tbody tr:last-of-type{
+    border-bottom: 3px solid #0a0a23;
+}
+tbody td{
+    padding: 7px;
+}
+.btn{
+    width: 80%;
+    background-color: crimson;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 18px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    transition: font-size 0.3s , background-color 0.3s;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgb(161, 71, 71);
+    cursor: pointer;
+}
+.btn:hover {
+   font-size: 23px;
+   background-color: darkred; 
+}
+input[type='submit']:hover{
+    background-color: darkred; 
+}
+tbody td:last-of-type:nth-of-type(even){
+    background-color: #eee;
+}
